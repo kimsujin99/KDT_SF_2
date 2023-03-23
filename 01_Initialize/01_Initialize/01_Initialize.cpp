@@ -8,53 +8,85 @@
 
 int main() //가장 먼저 호출되는 함수
 {
-    std::cout << "Hello World!\n";
-    //return 0; 끝났다는 뜻 써도 되고 안써도 됨
-    //std::cout : 출력하는 친구 
+	std::cout << "----실습1-----";
+	std::cout << "\n";
+	int a;
+	std::cout << "나이를 입력하세요.";
+	std::cin >> a;
+	if (a < 200) {
+		if (1 <= a && a <= 7) {
+			std::cout << "유아";
 
-    //int a = 1;
-    //bool bool123 = true;
-    //bool123 = false;
-    //bool bool123 = "abc"; //글자가 있으면 true라고 인식
+		}
+		else if (8 <= a && a <= 13) {
+			std::cout << "초등학생";
+		}
+		else if (14 <= a && a <= 16) {
+			std::cout << "중학생";
 
-    //char char123 = 'a';
-    //int int123 = 1;
-    //float float123 = 0.1;
+		}
+		else if (17 <= a && a <= 19) {
+			std::cout << "고등학생";
+		}
+		else
+		{
+			std::cout << "성인";
+		}
+	}
+	else
+	{
+		std::cout << "나이가 너무 많습니다..!";
+	}
+	std::cout << "\n";
+	std::cout << "-------실습2-------";
+	std::cout << "\n";
 
+	std::string b;
+	std::cout << "이름을 입력하세요.";
+	std::cin >> b;
+	if (b == "홍길동"){
+		std::cout << "남자";
+	}
+	else if (b == "성춘향") {
+		std::cout << "여자";
+	}
+	else {
+		std::cout << "모르겠어요.";
+	}
+	
+	std::cout << "\n";
+	std::cout << "-------실습3-------";
+	std::cout << "\n";
+	int c;
+	std::cin >> c;
+	c % 5 == 0 ? std::cout << c << "는 5의 배수입니다." : std::cout << c << "는 5의 배수가 아니네요ㅜㅜ";
+	
+	std::cout << "\n";
+	std::cout << "-------실습4-------";
+	std::cout << "\n";
+	int e,f;
+	char g;
+	std::cout << "연산할 정수 두개를 입력해 주세요.";
+	std::cin >> e;
+	std::cin >> f;
+	std::cout << "연산자를 입력해주세요.(+-*/)";
+	std::cin >> g;
+	if (g == '+') {
+		std::cout << "연산결과--->" << e + f;
 
-    int a = 1;
-    int b = 2;
-    std::cout << a + b;
-    std::cout << "\n";
-
-    float f = 1.2;
-    float g = 3.9;
-    std::cout << f + g;
-
-    bool c1 = true;
-    std::cout << c1;
-    std::cout << "\n";
-
-    bool c2 = false;
-    std::cout << c2;
-    std::cout << "\n";
-
-    char d = 'a';
-    std::cout << d;
-    std::cout << "\n";
-
-    char e = 'b';
-    std::cout << e;
-    std::cout << "\n";
-
-    std::string str1 = "안녕?";
-    std::cout << str1;
-    std::cout << "\n";
-
-    std::string str2 = "반가워";
-    std::cout << str2;
+	}
+	else if (g == '-') {
+		std::cout << "연산결과--->" << e - f;
+	}
+	else if (g == '*') {
+		std::cout << "연산결과--->" << e * f;
+	}
+	else{
+		std::cout << "연산결과--->몫 : " << e / f << "나머지: " << e % f;
 
 }
+}
+
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
