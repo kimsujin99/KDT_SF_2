@@ -1,0 +1,4 @@
+﻿  01_Initialize.cpp
+C:\Users\user\Desktop\github\KDT_SF_2\01_Initialize\01_Initialize\01_Initialize.cpp(30,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\github\KDT_SF_2\01_Initialize\01_Initialize\01_Initialize.cpp(31,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  01_Initialize.vcxproj -> C:\Users\user\Desktop\github\KDT_SF_2\01_Initialize\Debug\01_Initialize.exe
