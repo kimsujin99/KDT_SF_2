@@ -10,7 +10,7 @@ int main()
 		std::cout << "\n" << "y를 입력하세요: ";
 		std::cin >> y;
 
-		if (x < 0 || y < 0) {
+		if (x <= 0 || y <= 0) {
 			std::cout << "x와 y모두 양수를 입력해주세요.";
 			std::cout << "\n";
 		}
