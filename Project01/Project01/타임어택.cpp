@@ -49,7 +49,7 @@ int main() {
 
 		clock_t endTime = clock();
 		int time = (endTime - startTime) / CLOCKS_PER_SEC;
-		if (time >= 10) {
+		if (time >= 30) {
 			cout << "타임오버!\n";
 			cout << "총 입력한 단어 개수 : " << count;
 			break;
