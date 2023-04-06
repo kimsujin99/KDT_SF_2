@@ -1,12 +1,8 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
-#include <fstream>
-#include<vector>
-#include<string>
 #include <set>
 using namespace std;
-
 
 
 

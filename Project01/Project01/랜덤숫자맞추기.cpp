@@ -1,55 +1,68 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
+#include <set>
 using namespace std;
 
 int main() {
+    int num_user;
+    int count = 0;
+    set<int> used_num;
+
+    cout << "숫자는 1~25까지의 숫자만 입력할 수 있습니다.\n";
+
+    for (int i = 0; i < 6; i++) {
+        cout << i + 1 << "번째의 번호를 입력하세요 : ";
+        cin >> num_user;
+
+        if (num_user > 25 || num_user < 1) {
+            cout << "잘못된 숫자입니다. 다시 입력해주세요.\n";
+            i--;
+        }
+        if (used_num.count(num_user)) {
+            cout << "이미 입력된 숫자 입니다.\n";
+            i--;
+        }
+
+        used_num.insert(num_user);
 
 
+    }
+
+    cout << "---------------------------\n" << "당첨번호 공개!\n";
+
+    int Cnum[25] = {};
 
 
+    srand((unsigned int)time(NULL));
 
+    for (int i = 0; i < 6; i++) {
+        Cnum[i] = rand() % 25 + 1;
+        for (int j = 0; j < i; j++) {
+            if (Cnum[i] == Cnum[j]) {
+                i--;
+                break;
+            }
+        }
+    }
+    for (int i = 0; i < 6; i++) {
+        cout << Cnum[i] << " ";
+
+        for (int j = 0; j < 6; j++) {
+            if (Cnum[i] == num_user) {
+                count++;
+                break;
+
+            }
+            
+        }
+        
+    }
+    cout << "\n";
+    cout << "1~7등까지 결과가 나올 수 있습니다.\n";
+    for (int k = 0; k < 8; k++) {
+        if (count == k) {
+            cout << "결과: " << 7 - k << "등입니다!";
+        }
+    }
 }
-
-
-/*	srand(time(NULL));// 호출할때마다 다른 값이 나오게 된다.
-	int num = rand();
-	cout << num << "\n";
-	int tmp = num % 25 + 1;
-	cout << tmp << endl;
-	cout << RAND_MAX;
-*/
-
-/*
-#include<iostream>
-#include<cstdlib>
-#include<ctime>
-using namespace std;
-
-int main(void) {
-
-
-    int iNum[45] = {};
-    for (int i = 0; i < 45; i++) {
-        iNum[i] = i + 1;
-    }
-
-    srand(time(NULL));
-
-
-    int iTemp, idx1, idx2;
-    for (int i = 0; i < 100; i++) {
-        idx1 = rand() % 45;
-        idx2 = rand() % 45;
-
-        iTemp = iNum[idx1];
-        iNum[idx1] = iNum[idx2];
-        iNum[idx2] = iTemp;
-    }
-
-
-    for (int i = 0; i < 5; i++) {
-        cout <<  iNum[i] <<" " << endl;
-    }
-
-}*/
