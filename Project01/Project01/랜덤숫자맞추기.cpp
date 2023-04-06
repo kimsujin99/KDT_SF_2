@@ -38,6 +38,7 @@ int main() {
 
     for (int i = 0; i < 6; i++) {
         Cnum[i] = rand() % 25 + 1;
+
         for (int j = 0; j < i; j++) {
             if (Cnum[i] == Cnum[j]) {
                 i--;
@@ -45,6 +46,7 @@ int main() {
             }
         }
     }
+
     for (int i = 0; i < 6; i++) {
         cout << Cnum[i] << " ";
 
