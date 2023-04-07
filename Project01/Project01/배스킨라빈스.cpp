@@ -19,10 +19,8 @@ int main() {
 			cout << "개수를 입력하세요 : ";
 			cin >> num_in;
 			
-			if (num_in < 0 || num_in>3) {
+			if (num_in < 1 || num_in>3) {
 				cout << "1~3사이의 숫자를 입력하세요\n";
-				num_in = 0;
-				user = true;
 			}
 
 
