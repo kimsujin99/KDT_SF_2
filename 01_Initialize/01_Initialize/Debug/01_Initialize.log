@@ -1,2 +1,2 @@
-﻿  소스.cpp
-  01_Initialize.vcxproj -> C:\Users\user\Desktop\github\KDT_SF_2\01_Initialize\Debug\01_Initialize.exe
+﻿  소스1.cpp
+C:\Users\user\Desktop\github\KDT_SF_2\01_Initialize\01_Initialize\소스1.cpp(32,1): error C3867: 'Calculate::getOutput': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.

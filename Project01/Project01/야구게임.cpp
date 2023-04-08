@@ -6,11 +6,7 @@ using namespace std;
 
 int main(){
 
-	int user[3] = {};
 	int num[3];
-	int strike=0;
-	int ball=0;
-	int count = 0;
 
 	srand((unsigned int)time(NULL));
 
@@ -27,6 +23,13 @@ int main(){
 	cout << "야구게임\n";
 	
 	while (1) {
+	
+	int user[3] = {};
+	int strike=0;
+	int ball=0;
+	int count = 0;
+
+
 		cout << "\n1 ~ 9 사이의 숫자 3개를 입력하시오(이외의 숫자:종료)\n";
 		cin >> user[0] >> user[1] >> user[2];
 		
