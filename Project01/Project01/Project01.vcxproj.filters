@@ -36,5 +36,11 @@
     <ClCompile Include="사칙연산계.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="계산기피드백.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="게임수정전.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

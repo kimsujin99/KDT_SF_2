@@ -1,2 +1,3 @@
 ﻿  랜덤숫자맞추기.cpp
+C:\Users\user\Desktop\github\KDT_SF_2\Project01\Project01\랜덤숫자맞추기.cpp(15,9): warning C4101: 'x' :참조되지 않은 지역 변수입니다.
   Project01.vcxproj -> C:\Users\user\Desktop\github\KDT_SF_2\Project01\Debug\Project01.exe
