@@ -6,8 +6,9 @@ using namespace std;
 
 int main() {
     int num_user;
-    int count = 0;
     set<int> used_num;
+    srand((unsigned int)time(NULL));
+
 
     cout << "숫자는 1~25까지의 숫자만 입력할 수 있습니다.\n";
 
@@ -25,16 +26,13 @@ int main() {
         }
 
         used_num.insert(num_user);
-
-
     }
 
     cout << "---------------------------\n" << "당첨번호 공개!\n";
 
     int Cnum[25] = {};
 
-
-    srand((unsigned int)time(NULL));
+    int count = 0;
 
     for (int i = 0; i < 6; i++) {
         Cnum[i] = rand() % 25 + 1;
@@ -46,6 +44,7 @@ int main() {
             }
         }
     }
+    
 
     for (int i = 0; i < 6; i++) {
         cout << Cnum[i] << " ";
@@ -54,7 +53,6 @@ int main() {
             if (Cnum[i] == num_user) {
                 count++;
                 break;
-
             }
             
         }
